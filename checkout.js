@@ -40,3 +40,5 @@ let itens = [
 
 console.log("Quantidade de itens:", contarItens(itens));
 console.log("Subtotal:", calcularSubtotal(itens));
+
+// Fim dos testes do carrinho
