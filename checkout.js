@@ -30,3 +30,13 @@ console.log("DESC20:", aplicarCupom("DESC20", subtotal));
 console.log("FRETEGRATIS:", aplicarCupom("FRETEGRATIS", subtotal));
 console.log("Cupom inválido:", aplicarCupom("ABC123", subtotal));
 console.log("DESC20 abaixo de R$200:", aplicarCupom("DESC20", 100));
+function finalizarCompra(subtotal, cupom) {
+    let total = aplicarCupom(cupom, subtotal);
+
+    return {
+        subtotal: subtotal,
+        total: total,
+        desconto: subtotal - total
+    };
+}
+
