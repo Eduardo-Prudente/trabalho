@@ -40,3 +40,6 @@ function finalizarCompra(subtotal, cupom) {
     };
 }
 
+
+console.log("Finalizar compra:", finalizarCompra(250, "DESC10"));
+console.log("Finalizar com cupom inválido:", finalizarCompra(250, "ABC123"));
